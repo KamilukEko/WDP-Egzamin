@@ -31,6 +31,7 @@ namespace Egzamin2
             Console.WriteLine(A1(new uint[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 })); // 2 + 3 + 5 + 7 = 17
             Console.WriteLine(A2(-23133123)); // 4
             Console.WriteLine(A3("Mama, tata i Ala!")); // 2
+            Console.WriteLine(ZwrocBinarnie(A4(142558))); // Wejsciowa 100010110011011110 return to 100010110100011110
 
             Console.ReadKey();
         }
@@ -154,16 +155,17 @@ namespace Egzamin2
             return wynik;
         }
 
-        static ulong A4(ulong dane)
+        static ulong A4(ulong dane) //Wartosc 100010110011011110 | c1 011110 | c2  0011 | c3 100010110000000000 | return 100010110100011110
         {
-            var minusPierwszych6Bitow = dane >> 6;
-            if ((minusPierwszych6Bitow & 0b1111) == 0b1111)
-            {
-                Console.WriteLine("Zamiana na 0000");
-            }
-            Console.WriteLine(ZwrocBinarnie(dane));
-            Console.WriteLine(ZwrocBinarnie(minusPierwszych6Bitow));
-            return 0;
+            var c1 = dane & 0b111111; // Pierwszych 6 bitow
+            var c2 = (dane >> 6) & 0b1111; // Od 7 bitu i potem 4 kolejne czyli od 7 do 10 (interesujacy nas przedzial)
+            var c3 = (dane >> 10) << 10; // Pierwsze 10 bitów wyzerowane
+            
+            c2 += 1;
+            c2 = c2 & 1111; // Zapewnienie warunku ,,Jeśli przechowywana wartość to 1111, zwiększona wartość, to 0000.". Jeśli wartość jest równa 1111 to przekroczy 5 bitów wiec wystarczy uzyc 4 pierwszych które będą równe 0000
+            c2 = c2 << 6; // Rozszerzam o brakujace 6 bitow aby zapewnic zgodnosc indeksow
+
+            return c3 | c2 | c1; //Do części 3 dodajemy interesujace nas bity z rozszerzeniem o brakujace bity dla zgodnosci i na koniec część 1
         }
         
         #endregion
