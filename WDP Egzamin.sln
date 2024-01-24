@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33529.622
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin 1", "Egzamin1\Egzamin 1.csproj", "{AD222D67-1213-492C-9B76-5F5BCA0E7A32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin1", "Egzamin1\Egzamin1.csproj", "{AD222D67-1213-492C-9B76-5F5BCA0E7A32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin2", "Egzamin2\Egzamin2.csproj", "{586B2338-6586-4984-981D-3EB99CFF76F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin3", "Egzamin3\Egzamin3.csproj", "{B2566828-8594-4AEE-AB94-4462E02F9DE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin4", "Egzamin4\Egzamin4.csproj", "{10D58B48-4579-4F7B-9A20-04E80A17F715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B2566828-8594-4AEE-AB94-4462E02F9DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2566828-8594-4AEE-AB94-4462E02F9DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2566828-8594-4AEE-AB94-4462E02F9DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
