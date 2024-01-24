@@ -18,7 +18,7 @@ namespace Egzamin3
         static void Main(string[] args)
         {
             Console.WriteLine(F1(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 })); // (1 + 4 + 6 + 8 + 9 + 10) / 6 = 6,3
-            Console.WriteLine(F2("Nie znam słow z taką aaaawwww samą ilością spółgłosek aaawww hihihaha hhihaha")); // aaawww
+            Console.WriteLine(F2("Nie znam słow z taką aaaawwww samą ilością spółgłosek aaawww hihihaha hhihaha")); // hihihaha 
             Console.WriteLine(F3(2137)); // W binarnym 100001011001 czyli powinno byc 2169 (100001111001)
             Console.WriteLine(F4(2137)); // Po konwersji 13521 czyli 1 + 3 + 5 + 2 + 1 = 12
 

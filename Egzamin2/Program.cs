@@ -32,7 +32,7 @@ namespace Egzamin2
             Console.WriteLine(A2(-23133123)); // 4
             Console.WriteLine(A3("Mama, tata i Ala!")); // 2
             Console.WriteLine(ZwrocBinarnie(A4(142558))); // Wejsciowa 100010110011011110 return to 100010110100011110
-
+         
             Console.ReadKey();
         }
 
@@ -162,7 +162,7 @@ namespace Egzamin2
             var c3 = (dane >> 10) << 10; // Pierwsze 10 bitów wyzerowane
             
             c2 += 1;
-            c2 = c2 & 1111; // Zapewnienie warunku ,,Jeśli przechowywana wartość to 1111, zwiększona wartość, to 0000.". Jeśli wartość jest równa 1111 to przekroczy 5 bitów wiec wystarczy uzyc 4 pierwszych które będą równe 0000
+            c2 = c2 & 0b1111; // Zapewnienie warunku ,,Jeśli przechowywana wartość to 1111, zwiększona wartość, to 0000.". Jeśli wartość jest równa 1111 to przekroczy 5 bitów wiec wystarczy uzyc 4 pierwszych które będą równe 0000
             c2 = c2 << 6; // Rozszerzam o brakujace 6 bitow aby zapewnic zgodnosc indeksow
 
             return c3 | c2 | c1; //Do części 3 dodajemy interesujace nas bity z rozszerzeniem o brakujace bity dla zgodnosci i na koniec część 1

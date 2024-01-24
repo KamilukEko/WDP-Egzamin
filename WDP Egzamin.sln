@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin3", "Egzamin3\Egzami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin4", "Egzamin4\Egzamin4.csproj", "{10D58B48-4579-4F7B-9A20-04E80A17F715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egzamin5", "Egzamin5\Egzamin5.csproj", "{5AC13844-49B9-4D47-A44E-E9D636DCE6EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D58B48-4579-4F7B-9A20-04E80A17F715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC13844-49B9-4D47-A44E-E9D636DCE6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC13844-49B9-4D47-A44E-E9D636DCE6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC13844-49B9-4D47-A44E-E9D636DCE6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC13844-49B9-4D47-A44E-E9D636DCE6EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
